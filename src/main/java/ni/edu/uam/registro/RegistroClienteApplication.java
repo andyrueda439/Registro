@@ -7,11 +7,11 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class RegistroClienteApplication extends Application {
+public class ClienteApplication extends Application {
 
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(RegistroClienteApplication.class.getResource("registro-cliente.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(ClienteApplication.class.getResource("registro-cliente.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
         stage.setTitle("Registro de Cliente");
         stage.setScene(scene);
